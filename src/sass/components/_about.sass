@@ -1,0 +1,96 @@
+.about
+	+wrapper()
+	margin-bottom: 120px
+
+	&-row
+		+row-flex()
+
+	&-col
+		+col()
+		position: relative
+		overflow: hidden
+
+		&.left
+			+size(5)
+			height: 650px
+			+md(height, 500px)
+			background-color: $color-bg
+			background-image: url(../img/img-about.jpg)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center center
+			cursor: pointer
+			+small-shadow()
+
+			&:hover > .about-overlay,
+			&:hover > .about-heading
+				transform: translateY(0)
+				transition: transform .3s ease-in
+
+		&.right
+			+size(7)
+				
+			p
+				font-family: $font-sul
+				color: #fff
+				font-size: 24px
+				text-align: justify
+
+	&-overlay,
+	&-heading
+		transform: translateY(100%)
+		transition: transform .3s ease-in-out
+
+	&-overlay
+		background-color: rgba($color-overlay, .85)
+		position: absolute
+		left: -10px
+		top: -10px
+		height: calc(100% + 20px)
+		width: calc(100% + 20px)
+		-webkit-filter: blur(3px)
+		-o-filter: blur(3px)
+		filter: blur(3px)
+		z-index: 1
+
+	&-heading
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-ms-align-items: center
+		align-items: center
+		-webkit-flex-direction: column
+		-moz-flex-direction: column
+		-ms-flex-direction: column
+		-o-flex-direction: column
+		flex-direction: column
+		-webkit-justify-content: center
+		-moz-justify-content: center
+		-ms-justify-content: center
+		-o-justify-content: center
+		justify-content: center
+
+		h3
+			font-size: 28px
+			color: #fff
+			font-family: $font-sub
+
+		h4
+			padding-top: 40px
+			font-size: 18px
+			color: #fff
+			font-family: $font-sul
+
+			&.no-padding
+				padding-top: 0
+
+		
+			

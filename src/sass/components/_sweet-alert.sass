@@ -1,0 +1,52 @@
+.pinsel-body,
+.home-body,
+.light-shadow-body
+	.swal
+		&-modal
+			font-family: $font-sur
+
+		&-button
+			border-radius: 30px
+
+			&:focus
+				box-shadow: none
+
+
+.pinsel-body,
+.home-body
+	.swal
+		&-modal
+			background-color: lighten($color-bg, 5%)
+
+		&-title,
+		&-text
+			color: #fff
+
+		&-button
+			background-color: $color-button
+			color: $color-bg
+
+			&:active
+				background-color: darken($color-button, 20%)
+
+			&:hover
+				background-color: lighten($color-button, 20%)
+
+.light-shadow-body
+	.swal
+		&-button
+			background-color: $color-button-2
+			color: #fff
+
+			&:active
+				background-color: darken($color-button-2, 10%)
+
+			&:hover
+				background-color: lighten($color-button-2, 10%)
+
+	.swal-icon.swal-icon--info
+		border-color: $color-button-2
+
+		&::before,
+		&::after
+			background-color: $color-button-2

@@ -1,0 +1,142 @@
+#light-shadow
+	background-color: #fff
+
+	.nav
+		&-logo
+			background-image: url(../img/lsp-black.png)
+
+		&-list
+			li
+				a
+					color: #000
+
+					&::before
+						background-color: #000
+
+		&-bars 
+			span,
+			span::after, 
+			span::before
+				background-color: #000
+
+	.sidebar
+		border-left: 1px solid rgba(255,255,255,.2)
+		background-color: #fff
+
+		&.active
+			box-shadow: -1px -2px 1px rgba(0, 0, 0, .2)
+
+		h2
+			margin: 35px 0
+			color: #fff
+			background-color: $color-button-2
+			padding: 0 30px
+			height: 60px
+			border-radius: 30px
+			line-height: 55px
+
+	.feedback-form
+		input
+			border-bottom: 2px solid $color-button-2
+			color: $color-button-2
+
+		label
+			color: $color-button-2
+
+		button
+			border: 3px solid #fff
+			color: $color-button-2
+
+			&:focus
+				outline: none
+
+			&::before
+				background: $color-button-2
+
+			&:hover
+				color: $color-bg
+
+			&::after
+				background: $color-button-2
+
+			&:hover
+				color: #fff
+ 
+	.feedback
+		+wrapper()
+		margin-bottom: 130px
+
+		&-row
+			+row-flex()
+
+			&.form-row
+				margin-bottom: 60px
+
+				&:nth-child(2)
+					margin-bottom: 30px
+
+		&-col
+			+col()
+			position: relative
+
+			&.left
+				+size(6)
+
+				h2
+					display: inline-block
+					font-family: $font-sub
+					font-size: 28px
+					margin-bottom: 60px
+					color: #fff
+					background-color: $color-button-2
+					padding: 0 30px
+					height: 60px
+					border-radius: 30px
+					line-height: 55px
+
+			&.right
+				+size(6)
+
+				p
+					color: #000
+					font-family: $font-sul
+					font-size: 20px
+					text-align: justify
+					padding-top: 10px
+
+			&.name,
+			&.promo
+				+size(5)
+
+			&.theme,
+			&.tel
+				+size(7)
+
+			&.submit
+				+size(7)
+				+shift-left(5)
+
+	.footer
+
+		&-row
+			color: #000
+			opacity: 1
+
+			p
+				opacity: 1
+
+			i
+				color: #000
+
+			.light-shadow-logo
+				background-image: url(../img/lsp-black.png)
+
+			.pinsel-logo
+				background-image: url(../img/pinsel-grey.svg)
+				opacity: 1
+
+		&-socials
+			.link
+
+				i
+					color: #000

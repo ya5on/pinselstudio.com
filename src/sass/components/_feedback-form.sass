@@ -1,0 +1,112 @@
+.feedback-form
+	input
+		width: 100%
+		margin: 0
+		padding: 0
+		box-sizing: border-box
+		background-color: transparent
+		border-top: none
+		border-left: none
+		border-right: none
+		border-bottom: 2px solid #fff
+		height: 50px
+		color: #fff
+		font-family: $font-sul
+		font-size: 18px
+		position: relative
+		cursor: pointer
+		border-radius: 0
+
+		&:focus
+			outline: none
+
+		&:focus + label,
+		&:valid + label,
+		&:not(:empty) + label
+			transform: scale(.8)
+			top: -15px
+
+	label
+		font-family: $font-sur
+		color: #fff
+		position: absolute
+		left: 0
+		top: 15px
+		transform-origin: left center
+		transition: all .3s
+		cursor: pointer
+
+		&.up
+			transform: scale(.8) !important
+			top: -15px !important
+ 
+		&.down
+			transform: scale(1) !important
+			top: 15px !important
+
+	button
+		width: 100%
+		position: relative
+		padding: 13px 0
+		font-family: $font-sur
+		border: 3px solid $color-bg
+		border-radius: 50px
+		margin-top: 30px
+		font-size: 18px
+		display: block
+		background-color: transparent
+		color: $color-button
+		cursor: pointer
+		overflow: hidden
+		z-index: 1
+
+		&:focus
+			outline: none
+
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translateY(-50%) scale(.6)
+			width: 15px
+			height: 15px
+			background: $color-button
+			left: 40px
+			border-radius: 50%
+			z-index: -1
+			transition: left .25s ease-in 0s, transform .125s ease-in 0s, opacity .25s ease-in 0s
+			opacity: 0
+
+		&:hover
+			color: $color-bg
+			transition-delay: .25s
+
+			&::before
+				left: 10px
+				transform: translateY(-50%) scale(40)
+				transition: left .25s ease-in 0s, transform .125s ease-in .25s
+				opacity: 1
+
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translateY(-50%) scale(.6)
+			width: 15px
+			height: 15px
+			background: $color-button
+			right: 40px
+			border-radius: 50%
+			z-index: -1
+			transition: right .25s ease-in 0s, transform .125s ease-in 0s, opacity .25s ease-in 0s
+			opacity: 0
+
+		&:hover
+			color: $color-bg
+			transition-delay: .25s
+
+			&::after
+				right: 10px
+				transform: translateY(-50%) scale(40)
+				transition: right .25s ease-in 0s, transform .125s ease-in .25s
+				opacity: 1

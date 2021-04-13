@@ -1,0 +1,749 @@
+#dr-grape-longrid,
+#perlina-longrid,
+#pinsel-longrid,
+#zakarpatsky-longrid
+	margin: 0 auto
+	max-width: 1200px
+
+#dr-grape-longrid
+	p, h2
+		font-family: Arial
+
+	h2
+		text-align: justify
+
+	.nav
+		&-logo
+			background-image: url(../img/pinsel.svg)
+
+		&-list
+			li
+				a
+					color: #000
+
+					&::before
+						background-color: #000
+
+		&-bars 
+			display: none
+
+	.footer
+		margin-top: 60px
+
+		&-row
+			color: #000
+			opacity: 1
+
+			p
+				opacity: 1
+
+			i
+				color: #000
+
+			.light-shadow-logo
+				background-image: url(../img/lsp-black.png)
+
+			.pinsel-logo
+				background-image: url(../img/pinsel-grey.svg)
+				opacity: 1
+
+		&-socials
+			.link
+
+				i
+					color: #000
+
+	.top
+		position: relative
+		height: 700px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-justify-content: space-between
+		-moz-justify-content: space-between
+		-ms-justify-content: space-between
+		-o-justify-content: space-between
+		justify-content: space-between
+		margin-bottom: 200px
+
+		.left,
+		.right
+			height: 100%
+			width: 35%
+
+		.left
+			background-image: url(../img/dr-grape/dr-grape-left-top.png)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: left top
+
+		.right
+			background-image: url(../img/dr-grape/dr-grape-right-top.png)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: right top
+
+		.logo
+			position: absolute
+			width: 135px
+			height: 165px
+			background-image: url(../img/dr-grape/dr-grape-logo.png)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center center
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+
+	.logo-text
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-justify-content: space-between
+		-moz-justify-content: space-between
+		-ms-justify-content: space-between
+		-o-justify-content: space-between
+		justify-content: space-between
+		margin-bottom: 200px
+		padding: 0 15px
+
+		.left,
+		.right,
+		.center
+			width: 33%
+			font-family: Arial
+			color: #000
+			font-size: 18px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+
+		.center
+			height: 400px
+			background-image: url(../img/dr-grape/dr-grape-logo-2.png)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center top
+
+		.left
+			width: 30%
+
+		.right
+			text-align: right
+			-ms-align-items: flex-end
+			align-items: flex-end
+			width: 30%
+
+	.circles-with-bottles
+		background-image: url(../img/dr-grape/dr-grape-bg-1.svg)
+		background-size: cover
+		background-position: 70% center
+		background-repeat: no-repeat
+		margin-bottom: 100px
+
+		.circles
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			-webkit-justify-content: space-around
+			-moz-justify-content: space-around
+			-ms-justify-content: space-around
+			-o-justify-content: space-around
+			justify-content: space-around
+			margin-bottom: 100px
+
+			.circle
+				height: 150px
+				width: 150px
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center center
+
+				&:nth-child(1)
+					background-image: url(../img/dr-grape/circe-left.png)
+
+				&:nth-child(2)
+					background-image: url(../img/dr-grape/circle-right.png)
+
+		.text-after-circles
+			text-align: center
+
+			h2
+				display: inline-block
+				max-width: 500px
+				text-align: center
+				color: #550e35
+				font-size: 20px
+				font-family: Arial
+
+		.bottle-with-text
+			margin-top: 200px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			-ms-align-items: center
+			align-items: center
+
+			.bottle-left
+				height: 400px
+				width: 500px
+				background-image: url(../img/dr-grape/bottles-left.png)
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: left bottom
+
+			.text-right
+				h2
+					max-width: 400px
+					color: #550e35
+					font-size: 20px
+					margin-left: 60px
+					+md(margin-left, 0)
+
+	.right-bottle-with-text
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-justify-content: space-between
+		-moz-justify-content: space-between
+		-ms-justify-content: space-between
+		-o-justify-content: space-between
+		justify-content: space-between
+		-ms-align-items: center
+		align-items: center
+		background-image: url(../img/dr-grape/dr-grape-bg-3.svg)
+		background-size: cover
+		background-position: 60% center
+		background-repeat: no-repeat
+
+		.bottle-right
+			margin: 100px 0
+			height: 500px
+			width: 500px
+			background-image: url(../img/dr-grape/bottle-right.png)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: right bottom
+
+		.text-left
+			h2
+				padding-left: 150px
+				width: 400px
+				color: #550e35
+				font-size: 20px
+
+	.bottom
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-ms-align-items: center
+		align-items: center
+		background-image: url(../img/dr-grape/dr-grape-bg-2.svg)
+		background-size: cover
+		background-position: -230px 250px
+		background-repeat: no-repeat
+
+
+		.bottle-left
+			height: 400px
+			width: 500px
+			background-image: url(../img/dr-grape/bottles-bottom.png)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: left center
+			margin-bottom: 100px
+
+		.text-right
+			h2
+				padding-left: 60px
+				width: 400px
+				color: #550e35
+				font-size: 20px
+				margin-bottom: 100px
+
+#perlina-longrid
+	padding: 0 30px
+
+	.nav-wrapper
+		margin-bottom: 150px
+
+	.nav
+		&-logo
+			background-image: url(../img/pinsel.svg)
+
+		&-list
+			li
+				a
+					color: #000
+
+					&::before
+						background-color: #000
+
+	h2
+		font-family: $font-sub
+		font-size: 45px
+
+	p
+		font-family: $font-sur
+		font-size: 20px
+
+	.footer
+
+		&-row
+			color: #000
+			opacity: 1
+
+			p
+				opacity: 1
+
+			i
+				color: #000
+
+			.light-shadow-logo
+				background-image: url(../img/lsp-black.png)
+
+			.pinsel-logo
+				background-image: url(../img/pinsel-grey.svg)
+				opacity: 1
+
+		&-socials
+			.link
+
+				i
+					color: #000
+
+	.perlina
+
+		&-title
+			margin-bottom: 60px
+
+		&-top
+			height: 51.1vw
+			+md(height, 54vw)
+			max-height: 700px
+			background-color: transparent
+			margin-bottom: 100px
+			background-image: url(../img/perlina/perlina-top.png)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center center
+			box-shadow: 0 0 90px 10px rgba(0, 0, 0, .2)
+
+		&-text
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			-webkit-justify-content: space-between
+			-moz-justify-content: space-between
+			-ms-justify-content: space-between
+			-o-justify-content: space-between
+			justify-content: space-between
+			margin-bottom: 100px
+
+			p
+				width: 420px
+				text-align: justify
+
+		&-maps
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			-webkit-justify-content: space-between
+			-moz-justify-content: space-between
+			-ms-justify-content: space-between
+			-o-justify-content: space-between
+			justify-content: space-between
+			-ms-align-items: center
+			align-items: center
+			margin-bottom: 200px
+
+			.map-left,
+			.map-right
+				width: 270px
+				height: 270px
+				background-repeat: no-repeat
+				background-position: center center
+
+			.map-left
+				background-image: url(../img/perlina/perlina-map-1.png)
+				box-shadow: 0 0 90px 10px rgba(0, 0, 0, .2)
+				background-size: cover
+
+			.map-right
+				background-image: url(../img/perlina/perlina-map-2.png)
+				background-size: contain
+
+			.equals
+				width: 75px
+				height: 75px
+				background-image: url(../img/perlina/equals.png)
+				background-repeat: no-repeat
+				background-position: center center
+
+		&-categories
+			height: 200px
+			margin-bottom: 170px
+			margin-top: 120px
+			background-image: url(../img/perlina/categories.png)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: contain
+
+		&-news
+			height: 51.1vw
+			+md(height, 48.6vw)
+			max-height: 635px
+			background-color: transparent
+			margin-bottom: 100px
+			background-image: url(../img/perlina/perlina-news.png)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center center
+			box-shadow: 0 0 90px 10px rgba(0, 0, 0, .2)
+			margin-bottom: 100px
+
+		&-logos
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			-ms-align-items: center
+			align-items: center
+			-webkit-justify-content: space-between
+			-moz-justify-content: space-between
+			-ms-justify-content: space-between
+			-o-justify-content: space-between
+			justify-content: space-between
+			margin-bottom: 100px
+
+			.logo-left,
+			.logo-right
+				background-repeat: no-repeat
+				background-position: center center
+				background-size: contain
+
+			.logo-left
+				width: 270px
+				height: 270px
+				background-image: url(../img/perlina/perlina-logo-1.png)
+
+			.logo-right
+				width: 200px
+				height: 200px
+				background-image: url(../img/perlina/perlina-logo-2.png)
+
+#zakarpatsky-longrid
+	padding: 0 30px
+
+	.nav
+		&-bars
+			display: none
+
+	h2
+		font-family: $font-sub
+		font-size: 22px
+		color: #fff
+		margin-bottom: 60px
+
+	p
+		font-family: $font-sur
+		font-size: 16px
+		color: #fff
+		text-align: justify
+
+	.zk-top
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-justify-content: space-between
+		-moz-justify-content: space-between
+		-ms-justify-content: space-between
+		-o-justify-content: space-between
+		justify-content: space-between
+		-ms-align-items: center
+		align-items: center
+		margin-bottom: 200px
+		margin-top: 100px
+
+		.mockup
+			height: 330px
+			width: 330px
+			background-image: url(../img/zakarpat/1.png)
+			background-position: center bottom
+			background-size: contain
+			background-repeat: no-repeat
+
+		.text
+			width: 330px
+
+		.venz
+			height: 300px
+			width: 70px
+			position: relative
+
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				background-image: url(../img/zakarpat/venz.svg)
+				background-position: center center
+				background-size: contain
+				background-repeat: no-repeat
+
+			&:last-child
+				&::after
+					transform: rotateY(180deg)
+
+	.zk-second,
+	.zk-third,
+	.zk-fourth,
+	.zk-fifth
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-justify-content: center
+		-moz-justify-content: center
+		-ms-justify-content: center
+		-o-justify-content: center
+		justify-content: center
+		width: 700px
+		margin: 0 auto 100px auto
+
+		.tile
+			width: 100%
+			height: 700px
+			background-image: url(../img/zakarpat/2.png)
+			background-position: center bottom
+			background-size: contain
+			background-repeat: no-repeat
+
+	.zk-third,
+		width: 730px
+
+		.tile
+			height: 730px
+			background-image: url(../img/zakarpat/3.png)
+
+	.zk-fourth
+		width: 720px
+
+		.tile
+			height: 720px
+			background-image: url(../img/zakarpat/4.png)
+
+	.zk-fifth
+		.tile
+			background-image: url(../img/zakarpat/5.png)
+
+	.zk-text
+		width: 700px
+		margin: 0 auto 100px auto
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-justify-content: space-between
+		-moz-justify-content: space-between
+		-ms-justify-content: space-between
+		-o-justify-content: space-between
+		justify-content: space-between
+
+		p
+			width: 350px
+
+#pinsel-longrid
+	.nav
+		&-bars
+			display: none
+
+	padding: 0 15px
+
+	h2
+		font-family: $font-sub
+		color: #fff
+		font-size: 40px
+
+	p,
+	h3
+		font-family: $font-sur
+		color: #fff
+		font-size: 18px
+
+	.pinsel-top
+		min-height: 1000px
+		background-size: 60% auto
+		background-repeat: no-repeat
+		background-position: -100px bottom
+		background-image: url(../img/pinsel/spot-1.svg)
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-flex-direction: column
+		-moz-flex-direction: column
+		-ms-flex-direction: column
+		-o-flex-direction: column
+		flex-direction: column
+		-ms-align-items: center
+		align-items: center
+		-webkit-justify-content: center
+		-moz-justify-content: center
+		-ms-justify-content: center
+		-o-justify-content: center
+		justify-content: center
+		margin-bottom: 100px
+
+		.pinsel-logo
+			margin-bottom: 100px
+			width: 400px
+			height: 200px
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center center
+			background-image: url(../img/pinsel-white.svg)
+
+		.pinsel-text
+			margin-top: 60px
+			margin-bottom: 100px
+			width: 600px
+			text-align: center
+			position: relative
+
+			&::after
+				content: ''
+				display: inline-block
+				background-color: #fff
+				height: 30px
+				width: 1px
+				position: relative
+				left: 0
+				bottom: -100px
+
+	.pinsel-text-with-girl,
+	.pinsel-text-with-spot,
+	.pinsel-text-area
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-justify-content: space-between
+		-moz-justify-content: space-between
+		-ms-justify-content: space-between
+		-o-justify-content: space-between
+		justify-content: space-between
+		margin-bottom: 100px
+
+		.girl,
+		.spot,
+		.heading
+			width: 500px
+			height: 400px
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center center
+			background-image: url(../img/pinsel/girl.png)
+
+			h2
+				margin-top: 30px
+
+		p
+			margin-top: 30px
+			width: 400px
+
+	.pinsel-text-with-spot
+		.spot
+			background-image: url(../img/pinsel/spot-2.svg)
+
+		h2
+			text-align: right
+
+	.portfolio
+		height: 600px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-ms-align-items: center
+		align-items: center
+		-webkit-justify-content: center
+		-moz-justify-content: center
+		-ms-justify-content: center
+		-o-justify-content: center
+		justify-content: center
+		margin-bottom: 100px
+		position: relative
+
+		&::before
+			content: ''
+			height: 100%
+			width: 100%
+			opacity: .45
+			position: absolute
+			background-image: url(../img/pinsel/portfolio.png)
+			background-size: contain
+			background-position: center center
+			background-repeat: no-repeat
+
+		h3
+			z-index: 3
+
+	.pinsel-text-area
+		.heading
+			background-image: none
+
+	.pinsel-text-with-slider
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-justify-content: space-between
+		-moz-justify-content: space-between
+		-ms-justify-content: space-between
+		-o-justify-content: space-between
+		justify-content: space-between
+		margin-bottom: 100px
+
+		p
+			width: 350px
+
+		.slider-image
+			width: 550px
+			height: 300px
+			background-image: url(../img/pinsel/slide.png)
+			background-size: contain
+			background-position: center center
+			background-repeat: no-repeat
+
+	.feedback
+		margin-bottom: 100px

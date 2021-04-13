@@ -1,0 +1,179 @@
+.slider-ls
+	+wrapper()
+	margin: 130px 0
+	position: relative
+
+	&-row
+		+row-flex()
+
+	&-col
+		+col()
+
+		&.left
+			+size(6)
+			background-image: url(../img/slider-ls-bg.svg)
+			background-size: contain
+			background-position: left bottom
+			background-repeat: no-repeat
+
+		&.right
+			+size(6)
+
+	h3
+		font-family: $font-sub
+		font-size: 20px
+		display: inline-block
+		color: #fff
+		background-color: $color-button-2
+		padding: 0 30px
+		height: 50px
+		border-radius: 30px
+		line-height: 45px
+
+	p,
+	h4
+		font-family: $font-sul
+		font-size: 20px
+
+	p
+		text-align: justify
+		padding: 60px 0 80px 35px
+
+	h4
+		height: 150px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-ms-align-items: center
+		align-items: center
+		padding-left: 35px
+
+	&-aside-row
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-justify-content: space-between
+		-moz-justify-content: space-between
+		-ms-justify-content: space-between
+		-o-justify-content: space-between
+		justify-content: space-between
+
+	.slick-dots
+		padding-left: 70%
+		padding-top: 0
+		
+		li
+			display: inline-block
+
+			&.slick-active
+				button::before
+					opacity: 1
+
+			button
+				position: relative
+				margin-right: 20px
+				outline: none
+				width: 80px
+				height: 50px
+				cursor: pointer
+				background-color: transparent
+				border: none
+				color: transparent
+
+				&:focus
+					outline: none
+
+				&::before
+					position: absolute
+					content: ''
+					display: inline-block
+					height: 9px
+					width: 40px
+					background-color: $color-button-2
+					letter-spacing: 50%
+					top: 50%
+					transform: translate(-50%, -50%)
+					cursor: pointer
+					border-radius: 4px
+					opacity: .4
+
+	.slick-prev,
+	.slick-next
+		overflow: hidden
+		position: absolute
+		top: 0
+		height: 100%
+		width: 10%
+		background-color: transparent
+		cursor: pointer
+		z-index: 3
+		border: none
+		color: transparent
+
+		span
+			position: absolute
+			top: 50%
+			transition: all .15s ease-in
+
+			i
+				color: rgba($color-button-2, .5)
+				font-size: 50px
+
+
+	.slick-prev:focus,
+	.slick-next:focus
+		outline: none
+
+	.slick-prev::after,
+	.slick-next::after
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		background-color: rgba(0, 0, 0, .1)
+		width: 100%
+		height: 100%
+		transition: transform .15s ease-in
+
+	.slick-prev:hover
+		&::after
+			transform: translateX(0)
+
+		span
+			left: 50%
+
+	.slick-next:hover
+		&::after
+			transform: translateX(0)
+
+		span
+			right: 50%
+
+	.slick-prev
+		left: 0
+
+		&::after
+			left: 0
+			transform: translateX(-100%)
+
+		span
+			left: -50%
+			transform: translate(-50%, -50%)
+
+	.slick-next
+		right: 0
+
+		&::after
+			right: 0
+			transform: translateX(100%)
+
+		span
+			right: -50%
+			transform: translate(50%, -50%)
+
+
+

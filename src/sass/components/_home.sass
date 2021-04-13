@@ -1,0 +1,511 @@
+#home
+	height: 100vh	
+	overflow: hidden
+
+	.light-shadow-home,
+	.pinsel-home
+		position: relative
+		overflow: hidden
+		height: 100vh
+		transition: transform .5s ease-in
+
+	.pinsel-home
+		background-color: $color-bg
+		background-image: url(../img/girl.png)
+		background-size: 80% auto
+		background-repeat: no-repeat
+		background-position: -82px bottom
+		transform: translateY(-100%)
+
+		&::after
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			background-image: url(../img/stripes.png)
+			background-position: right -50px
+
+		.pinsel-logo
+			height: 42px
+			width: 120px
+			display: inline-block
+			background-image: url(../img/pinsel-grey.svg)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: 0 0
+			position: absolute
+			top: 50px
+			left: 165px
+
+		.title
+			font-family: $font-sgr
+			color: rgba(#fff, .45)
+			display: inline-block
+
+			&-wrapper
+				display: flex
+				height: 100%
+				align-items: center
+				position: absolute
+				right: 181px
+				text-align: center
+
+			small,
+			strong
+				display: block
+
+			small
+				font-size: 36px
+				position: relative
+				left: 10px
+				top: 25px
+				text-align: left
+
+			strong
+				font-size: 195px
+				color: rgba(#fff, .65)
+				color: transparent
+				position: relative
+
+				svg
+					position: absolute
+					left: -9px
+					top: 0
+					width: 105%
+					height: 100%
+
+			blockquote
+				display: inline-block
+				text-align: center
+				font-size: 36px
+				padding-top: 200px
+
+		.pinsel-link,
+		.light-shadow-link
+			text-decoration: none
+			font-family: $font-sur
+			color: #fff
+			position: absolute
+			font-size: 24px
+			cursor: pointer
+
+		.pinsel-link
+			right: 235px
+			top: 50%
+
+			&::after,
+			&::before
+				position: absolute
+				display: block
+				content: ''
+				background-color: #fff
+
+			&::after	
+				top: 50%
+				transform: translateY(3px)
+				right: -54px
+				height: 1px
+				width: 30px
+				transform-origin: left center
+				animation: swing-x 2.8s infinite ease-in-out 
+				+md(animation, none)
+
+			&::before
+				transition: transform .8s cubic-bezier(.06,.87,.38,.84)
+				transform: scaleX(0)
+				transform-origin: right center
+				width: 100%
+				height: 1px
+				left: 0
+				bottom: -2px
+
+			&:hover::before
+				transform-origin: left center
+				transform: scaleX(1)
+
+			&:hover ~ .right-block
+				transform: translateX(0)
+				transition: all .8s cubic-bezier(.06,.87,.38,.84)
+
+		.light-shadow-link
+			left: 50%
+			transform: translateX(-50%)
+			bottom: 90px
+			
+			&::after,
+			&::before
+				position: absolute
+				display: block
+				content: ''
+				background-color: #fff
+
+			&::after
+				width: 1px
+				height: 30px
+				left: 50%
+				transform: translateX(-50%)
+				bottom: -45px
+				transform-origin: center top
+				animation: swing-y 2.8s infinite ease-in-out
+				+md(animation, none)
+		
+			&::before
+				transition: transform .8s cubic-bezier(.06,.87,.38,.84)
+				transform: scaleX(0)
+				transform-origin: right center
+				width: 100%
+				height: 1px
+				left: 0
+				bottom: -2px
+
+			&:hover::before
+				transform-origin: left center
+				transform: scaleX(1)
+
+		.right-block
+			width: 100px
+			height: 100%
+			display: inline-block
+			position: absolute
+			right: 0
+			transform: translateX(50%)
+			transition: all .8s cubic-bezier(.06,.87,.38,.84)
+			box-shadow: -20px 3px 10px rgba(0, 0, 0, 0.23)
+
+		&.active
+			transform: translateY(0)
+
+	.light-shadow
+		&-home
+			background-color: #fff
+			position: relative
+			+wrapper-full()
+
+			.right-block
+				width: 100px
+				height: 100%
+				display: inline-block
+				position: absolute
+				top: 0
+				right: 0
+				transform: translateX(50%)
+				transition: all .8s cubic-bezier(.06,.87,.38,.84)
+				box-shadow: -4px 0 54px rgba(0, 0, 0, 0.7);
+
+			.pinsel-link,
+			.light-shadow-link
+				text-decoration: none
+				font-family: $font-sur
+				color: #000
+				position: absolute
+				font-size: 24px
+				cursor: pointer
+
+			.pinsel-link
+				left: 50%
+				transform: translateX(-50%)
+				top: 60px
+				z-index: 10
+				
+				&::after,
+				&::before
+					position: absolute
+					display: block
+					content: ''
+					background-color: #000
+
+				&::after
+					width: 1px
+					height: 30px
+					left: 50%
+					transform: translateX(-50%)
+					top: -45px
+					animation: swing-y 2.8s infinite ease-in-out
+					transform-origin: center bottom
+					+md(animation, none)
+			
+				&::before
+					transition: transform .8s cubic-bezier(.06,.87,.38,.84)
+					transform: scaleX(0)
+					transform-origin: right center
+					width: 100%
+					height: 1px
+					left: 0
+					bottom: -2px
+
+				&:hover::before
+					transform-origin: left center
+					transform: scaleX(1)
+
+			.light-shadow-link
+				right: 235px
+				top: 50%
+				transform: translateY(30px)
+
+				&::after,
+				&::before
+					position: absolute
+					display: block
+					content: ''
+					background-color: #000
+
+				&::after	
+					top: 50%
+					transform: translateY(3px)
+					right: -54px
+					height: 1px
+					width: 30px
+					transform-origin: left center
+					animation: swing-x 2.8s infinite ease-in-out
+					+md(animation, none)
+
+				&::before
+					transition: transform .8s cubic-bezier(.06,.87,.38,.84)
+					transform: scaleX(0)
+					transform-origin: right center
+					width: 100%
+					height: 1px
+					left: 0
+					bottom: -2px
+
+				&:hover::before
+					transform-origin: left center
+					transform: scaleX(1)
+
+				&:hover ~ .right-block
+					transform: translateX(0)
+					transition: all .8s cubic-bezier(.06,.87,.38,.84)
+
+			.title
+				font-family: $font-sgr
+				color: #373737;
+				display: inline-block
+
+				&-wrapper
+					display: flex
+					height: 100%
+					align-items: center
+					position: absolute
+					right: 181px
+					text-align: center
+
+				small,
+				strong
+					display: block
+
+				small
+					font-size: 36px
+					position: relative
+					left: 10px
+					top: 25px
+					text-align: left
+
+				strong
+					font-size: 150px;
+					color: #373737;
+
+					&.little
+						font-size: 110px;
+						position: relative
+						bottom: 20px
+
+				blockquote
+					display: inline-block
+					text-align: center
+					font-size: 33px
+					padding-top: 200px
+
+
+			&.active
+				transform: translateY(-100%)
+
+		&-row
+			+row-flex()
+
+		&-col
+			+col()
+			height: 100vh
+			position: relative
+
+			&.camera
+				+size(7)
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				-ms-align-items: center
+				align-items: center
+				padding-left: 100px
+
+				.camera-mockup
+					margin-top: 60px
+					height: 60vh
+					width: 100%
+					max-width: 850px
+					background-image: url(../img/camera-home.png)
+					background-size: contain
+					background-repeat: no-repeat
+					background-position: center bottom
+
+			&.title-col
+				+size(5)
+
+		&-logo
+			height: 40px
+			width: 170px
+			position: absolute
+			left: 100px
+			top: 45px
+			background-image: url(../img/lsp-black.png)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center center
+
+@keyframes swing-x
+	0%
+		transform: scaleX(0) translateY(3px)
+
+	50%
+		transform: scaleX(1) translateY(3px)
+		width: 30px
+
+	100%
+		width: 0
+
+@keyframes swing-y
+	0%
+		transform: scaleY(0) translateX(-50%)
+
+	50%
+		transform: scaleY(1) translateX(-50%)
+		height: 30px
+
+	100%
+		height: 0
+
+@media screen and (max-height: 900px)
+	#home 
+		.pinsel-home 
+			background-size: 70% auto
+
+			.title 
+				position: relative
+				top: 95px
+
+				blockquote
+					padding-top: 20px
+
+			.title-wrapper
+				-ms-align-items: flex-start
+				align-items: flex-start
+
+			.pinsel-link
+				top: 350px
+
+		.light-shadow-home
+			.title
+				position: relative
+				top: 150px
+
+				blockquote
+					padding-top: 20px
+
+			.title-wrapper
+				-ms-align-items: flex-start
+				align-items: flex-start
+
+			.light-shadow-link
+				top: 388px
+
+@media screen and (max-width: 1450px)
+	#home
+		.light-shadow-home
+			.light-shadow-col.camera 
+				.camera-mockup
+					position: absolute
+					width: calc(100% - 200px)
+					height: calc(100% - 200px)
+					margin: 0
+					padding: 0
+					left: 50px
+					bottom: 50px
+
+			.title 
+				blockquote
+					font-size: 25px
+					padding-top: 120px;
+
+				strong
+					font-size: 120px
+	
+				strong.little
+					font-size: 90px
+
+				small
+					font-size: 30px
+					left: 8px
+
+@media screen and (max-width: 991px)
+	#home 
+		.pinsel-home 
+			background-size: 80% auto
+
+			.title 
+				position: relative
+				top: 250px
+
+				blockquote
+					padding-top: 20px
+
+			.title-wrapper
+				right: 110px 
+				-ms-align-items: flex-start 
+				align-items: flex-start 
+
+			.pinsel-link
+				right: 180px
+				top: 505px
+
+		.light-shadow-home
+			.title 
+				position: relative
+				top: 250px
+
+				blockquote
+					padding-top: 20px
+
+			.title-wrapper
+				right: 110px 
+				-ms-align-items: flex-start 
+				align-items: flex-start 
+
+			.light-shadow-link
+				right: 180px
+				top: 490px
+	
+			.light-shadow-col.camera 
+				.camera-mockup
+					position: absolute
+					width: calc(100% - 140px)
+					height: calc(100% - 140px)
+					margin: 0
+					padding: 0
+					left: 30px
+					bottom: 30px
+
+@media screen and (min-height: 930px)
+	#home
+		.light-shadow-home
+			.light-shadow-col.camera 
+					.camera-mockup
+						width: calc(100% - 100px)
+						height: calc(100% - 100px)
+
+		.pinsel-home 
+			background-size: 100%
+
+@media screen and (min-width: 1850px)
+	#home
+		.pinsel-home
+			background-size: auto 1000px !important

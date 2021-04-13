@@ -1,0 +1,76 @@
+@import '../vendor/smart-grid/smart-grid'
+@import 'fonts'
+@import 'variables'
+
++reset()
+
+body
+	background-color: $color-bg
+	transition: background-color .3s
+
+	&.home-body
+		background-color: $color-bg
+
+	&.pinsel-body
+		background-color: $color-bg
+
+	&.light-shadow-body
+		background-color: #fff
+
+	&.dr-grape-body
+		background-color: #fff
+
+	&.perlina-body
+		background-color: #fff
+
+	&.zakarpatsky-body
+		background-color: #1b1c1f
+
+*,
+*:focus,
+*:active,
+*:hover
+	outline: none
+
+#content
+	overflow: hidden
+
+#nprogress
+	.bar
+		background-color: #f00 !important
+		height: 3px !important
+
+	.spinner-icon
+		border-top-color: #f00 !important
+		border-left-color: #f00 !important
+
+#pinsel,
+#light-shadow,
+#error
+	max-width: 1200px
+	margin: 0 auto
+	overflow-x: hidden
+	position: relative
+
+
+@import 'components/preloader'
+@import 'components/navbar'
+@import 'components/tiles'
+@import 'components/sidebar'
+@import 'components/slider'
+@import 'components/about'
+@import 'components/feedback'
+@import 'components/footer'
+@import 'components/waves-button'
+@import 'components/feedback-form'
+@import 'components/sweet-alert'
+@import 'components/intro'
+@import 'components/slider-ls'
+@import 'components/video-placeholder'
+
+@import 'components/home'
+@import 'components/pinsel'
+@import 'components/light-shadow'
+@import 'components/error404'
+
+@import 'components/example'

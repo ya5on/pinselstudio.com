@@ -1,0 +1,17 @@
+button
+	.ripple
+		border-radius: 50%
+		background-color: rgba(#fff, 0.7)
+		position: absolute
+		transform: scale(0)
+		animation: ripple .6s linear
+
+@-webkit-keyframes ripple
+	to
+		transform: scale(2.5)
+		opacity: 0
+
+@keyframes ripple
+	to
+		transform: scale(2.5)
+		opacity: 0

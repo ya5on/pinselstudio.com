@@ -1,0 +1,51 @@
+.feedback
+	+wrapper()
+	margin-bottom: 130px
+
+	&-row
+		+row-flex()
+
+		&.form-row
+			margin-bottom: 60px
+
+			&:nth-child(2)
+				margin-bottom: 30px
+
+	&-col
+		+col()
+		position: relative
+
+		&.left
+			+size(6)
+
+			h2
+				color: #fff
+				font-family: $font-sub
+				font-size: 28px
+				margin-bottom: 60px
+
+		&.right
+			+size(6)
+
+			p
+				padding-left: 100px
+				color: #fff
+				font-family: $font-sul
+				font-size: 20px
+				text-align: center
+				padding-top: 10px
+
+		&.name,
+		&.promo
+			+size(5)
+
+		&.theme,
+		&.tel
+			+size(7)
+
+		&.submit
+			+size(7)
+			+shift-left(5)
+
+	
+
